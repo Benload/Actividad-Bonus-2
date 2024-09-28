@@ -13,29 +13,41 @@ var albumInfo = {
     'The Car': 'Lanzado en 2022, "The Car" es el séptimo álbum de la banda. Combina elementos de música cinematográfica con letras complejas y reflexivas. Ha vendido alrededor de 900,000 copias.'
 };
 
+var albumCover = {
+    'Whatever People Say I Am': 'imagenes/1.jpg',
+    'Favourite Worst Nightmare': 'imagenes/2.jpg',
+    'Humbug': 'imagenes/3.jpg',
+    'Suck It and See': 'imagenes/4.jpg',
+    'AM': 'imagenes/5.jpg',
+    'Tranquility Base Hotel & Casino': 'imagenes/6.png',
+    'The Car': 'imagenes/7.jpg'
+};
+
 var trace = {
     x: albums,
     y: sales,
     type: 'bar',
     marker: {
-        color: 'rgba(54,162,235,0.8)'
+        color: '#1db954'
     }
 };
 
 var data = [trace];
 
-// Opciones del gráfico
 var layout = {
-    title: 'Álbumes más vendidos de Arctic Monkeys',
+    title: 'Ventas de Álbumes de Arctic Monkeys',
+    plot_bgcolor: '#1b1b1b',
+    paper_bgcolor: '#1b1b1b',
+    font: {
+        color: '#f5f5f5'
+    },
     xaxis: {
-        title: 'Álbumes'
+        gridcolor: '#444',
     },
     yaxis: {
-        title: 'Ventas (millones)'
+        gridcolor: '#444',
     }
 };
-
-
 Plotly.newPlot('myPlot', data, layout);
 
 
@@ -44,7 +56,9 @@ var myPlot = document.getElementById('myPlot');
 myPlot.on('plotly_click', function (data) {
     var clickedAlbum = data.points[0].x;
     var info = albumInfo[clickedAlbum];
-    document.getElementById('albumInfo').innerHTML = `<strong>${clickedAlbum}</strong>: ${info}`;
+    document.getElementById('albumInfo').innerHTML = `<strong>${clickedAlbum}</strong> ${info}`;
     playSong(clickedAlbum);
+    var cover = albumCover[clickedAlbum];
+    document.getElementById('albumCover').src = cover;
 });
 

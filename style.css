@@ -74,6 +74,6 @@ p {
     }
 
     #mainContainer {
-        flex-direction: column;
+        flex-direction: row;
     }
 }

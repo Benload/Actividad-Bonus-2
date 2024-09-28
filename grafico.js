@@ -1,6 +1,6 @@
 
-var albums = ['Whatever People Say I Am', 'Favourite Worst Nightmare', 'AM', 'Humbug', 'Tranquility Base Hotel & Casino', 'Suck It and See', 'The Car'];
-var sales = [3.5, 2.4, 5.2, 1.2, 0.8, 1.5, 0.9];
+var albums = ['Whatever People Say I Am', 'Favourite Worst Nightmare', 'Humbug', 'Suck It and See', 'AM', 'Tranquility Base Hotel & Casino', 'The Car'];
+var sales = [3.5, 2.4, 1.2, 1.5, 5.2, 0.8, 0.9];
 
 
 var albumInfo = {

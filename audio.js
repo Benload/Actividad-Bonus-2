@@ -1,6 +1,6 @@
 
 const songUrls = {
-    'Whatever People Say I Am': 'canciones/A Certain Romance.mp3',
+    'Whatever People Say I Am That\'s What I\'m Not': 'canciones/A Certain Romance.mp3',
     'Favourite Worst Nightmare': 'canciones/Fluorescent Adolescent.mp3',
     'Humbug': 'canciones/Crying Lightning.mp3',
     'Suck It and See': 'canciones/Suck It And See.mp3',

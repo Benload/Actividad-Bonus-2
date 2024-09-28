@@ -1,5 +1,6 @@
-var albums = ['Whatever People Say I Am', 'Favourite Worst Nightmare', 'AM', 'Humbug', 'Tranquility Base Hotel & Casino'];
-var sales = [3.5, 2.4, 5.2, 1.2, 0.8];
+
+var albums = ['Whatever People Say I Am', 'Favourite Worst Nightmare', 'AM', 'Humbug', 'Tranquility Base Hotel & Casino', 'Suck It and See', 'The Car'];
+var sales = [3.5, 2.4, 5.2, 1.2, 0.8, 1.5, 0.9];
 
 
 var albumInfo = {
@@ -7,9 +8,10 @@ var albumInfo = {
     'Favourite Worst Nightmare': 'Este álbum, lanzado en 2007, contiene temas icónicos como "Fluorescent Adolescent".',
     'AM': 'Lanzado en 2013, "AM" es considerado uno de los mejores álbumes de Arctic Monkeys con ventas de 5.2 millones de copias.',
     'Humbug': 'Publicado en 2009, "Humbug" marca un cambio en el sonido de la banda, con un enfoque más oscuro y psicodélico.',
-    'Tranquility Base Hotel & Casino': 'Lanzado en 2018, este álbum es una aventura más experimental con un enfoque en el piano y letras conceptuales.'
+    'Tranquility Base Hotel & Casino': 'Lanzado en 2018, este álbum es una aventura más experimental con un enfoque en el piano y letras conceptuales.',
+    'Suck It and See': 'Lanzado en 2011, "Suck It and See" tiene un sonido más melódico y accesible que su predecesor. Combina indie rock con influencias pop. Vendió aproximadamente 1.5 millones de copias.',
+    'The Car': 'Lanzado en 2022, "The Car" es el séptimo álbum de la banda. Combina elementos de música cinematográfica con letras complejas y reflexivas. Ha vendido alrededor de 900,000 copias.'
 };
-
 
 var trace = {
     x: albums,
